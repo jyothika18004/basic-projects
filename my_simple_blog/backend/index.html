@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>My Simple Blog</h1>
+    </header>
+
+    <main>
+        <section id="new-post-section">
+            <h2>Create New Post</h2>
+            <form id="new-post-form">
+                <div class="form-group">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Content:</label>
+                    <textarea id="post-content" rows="5" required></textarea>
+                </div>
+                <button type="submit">Add Post</button>
+            </form>
+            <p id="form-message" class="hidden"></p>
+        </section>
+
+        <section id="posts-section">
+            <h2>All Posts</h2>
+            <div id="posts-container">
+                <p>Loading posts...</p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Simple Blog</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
